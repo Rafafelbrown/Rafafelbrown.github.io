@@ -103,4 +103,4 @@ Consulte o arquivo [`COMO_ATUALIZAR.md`](./COMO_ATUALIZAR.md) para um guia passo
 
 ---
 
-<p align="center">Feito com ❤️ por <strong>Rafael Brown</strong> · Brasília, DF</p>
+<p align="center">Desenvolvido com 💻 e ☕ por <strong>Rafael Brown</strong> · Brasília, DF</p>
