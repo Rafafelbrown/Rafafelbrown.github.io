@@ -82,8 +82,6 @@ nav {
 }
 .nav-links a:hover { color: var(--text); }
 .nav-links a:hover::after { width: 100%; }
-.nav-links a.active { color: var(--text); }
-.nav-links a.active::after { width: 100%; }
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; }
 .nav-toggle span { width: 24px; height: 2px; background: var(--text); border-radius: 2px; transition: var(--transition); }
 
@@ -128,16 +126,11 @@ section { position: relative; z-index: 1; }
   font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 900; line-height: 1.1;
   margin-bottom: 1rem;
 }
-.typewriter-wrap { min-height: 2rem; margin-bottom: 1.5rem; }
+.typewriter-wrap { height: 2rem; margin-bottom: 1.5rem; }
 #typewriter {
   font-size: 1.2rem; font-weight: 600; color: var(--cyan);
   border-right: 2px solid var(--cyan); padding-right: 4px;
   white-space: nowrap; overflow: hidden;
-  animation: cursor-blink 0.8s step-end infinite;
-}
-@keyframes cursor-blink {
-  0%, 100% { border-color: var(--cyan); }
-  50% { border-color: transparent; }
 }
 .hero-desc { font-size: 1.05rem; color: var(--muted); max-width: 480px; margin-bottom: 2rem; line-height: 1.7; }
 .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
@@ -352,27 +345,4 @@ footer .footer-grad { background: linear-gradient(90deg, var(--cyan), var(--viol
   .hero-name { font-size: 2.2rem; }
   .projects-grid { grid-template-columns: 1fr; }
   .contact-cards { grid-template-columns: 1fr 1fr; }
-}
-
-/* ===== LIGHT MODE ===== */
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg: #f8f9fc;
-    --bg2: #f0f2f7;
-    --bg3: #e8ebf2;
-    --text: #1a1a2e;
-    --muted: #5a6580;
-    --card: rgba(255,255,255,0.8);
-    --border: rgba(0,0,0,0.1);
-    --glow-cyan: rgba(0,180,220,0.12);
-    --glow-violet: rgba(120,70,220,0.12);
-  }
-  body { background: var(--bg); }
-  nav { background: rgba(248,249,252,0.85); }
-  .nav-links { background: rgba(248,249,252,0.98); }
-  .orb { opacity: 0.08; }
-  ::-webkit-scrollbar-track { background: var(--bg2); }
-  #back-to-top { color: #fff; }
-  .skill-category:hover { border-color: rgba(0,150,200,0.4); }
-  .project-card:hover { border-color: rgba(0,150,200,0.4); }
 }
