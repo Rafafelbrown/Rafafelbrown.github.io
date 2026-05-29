@@ -7,16 +7,16 @@ const phrases = [
   "Entusiasta de Machine Learning",
 ];
 let pi = 0, ci = 0, deleting = false;
-const el = document.getElementById("typewriter");
+const twEl = document.getElementById("typewriter");
 
 function type() {
   const word = phrases[pi];
   if (!deleting) {
-    el.textContent = word.slice(0, ci + 1);
+    twEl.textContent = word.slice(0, ci + 1);
     ci++;
     if (ci === word.length) { deleting = true; setTimeout(type, 2000); return; }
   } else {
-    el.textContent = word.slice(0, ci - 1);
+    twEl.textContent = word.slice(0, ci - 1);
     ci--;
     if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; }
   }
@@ -29,7 +29,7 @@ const observer = new IntersectionObserver(
   (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("visible"); }),
   { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
 );
-document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+document.querySelectorAll(".fade-in").forEach(fadeEl => observer.observe(fadeEl));
 
 /* ===== BACK TO TOP ===== */
 const btt = document.getElementById("back-to-top");
