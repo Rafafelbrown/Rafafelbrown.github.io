@@ -16,11 +16,13 @@ Site portfólio desenvolvido do zero com HTML, CSS e JavaScript puros — sem fr
 
 - **Typewriter animado** — rotação de títulos profissionais na seção Hero
 - **Animações de scroll** — elementos surgem suavemente com IntersectionObserver
-- **Navbar responsiva** — menu hambúrguer para mobile com destaque do link ativo
+- **Navbar responsiva** — menu hambúrguer para mobile com destaque do link ativo (link ativo destacado em cyan)
 - **Sombra dinâmica na nav** — ativada ao rolar a página
 - **Botão "Voltar ao topo"** — aparece após 400px de scroll
+- **Botão "Baixar CV"** — download direto do currículo em PDF a partir do Hero
 - **Design totalmente responsivo** — adaptado para mobile, tablet e desktop
 - **Orbs animados** — fundo com gradientes em movimento (CSS puro)
+- **Open Graph completo** — preview rico ao compartilhar no LinkedIn e outras redes (título, descrição e imagem)
 
 ---
 
@@ -28,13 +30,17 @@ Site portfólio desenvolvido do zero com HTML, CSS e JavaScript puros — sem fr
 
 ```
 portfolio/
-├── index.html          # Estrutura principal do site
-├── style.css           # Estilos, animações e responsividade
-├── script.js           # Typewriter, scroll, nav e interações
-├── foto.jpg            # Foto de perfil (Hero)
-├── COMO_ATUALIZAR.md   # Guia de manutenção do portfólio
-└── README.md           # Este arquivo
+├── index.html              # Estrutura principal do site
+├── style.css               # Estilos, animações e responsividade
+├── script.js               # Typewriter, scroll, nav e interações
+├── foto.jpg                # Foto de perfil (Hero e og:image)
+├── cv-rafael-brown.pdf     # Currículo para download (botão no Hero)
+├── favicon.svg             # Ícone da aba do navegador
+├── COMO_ATUALIZAR.md       # Guia de manutenção do portfólio
+└── README.md               # Este arquivo
 ```
+
+> ⚠️ **Importante:** o arquivo `cv-rafael-brown.pdf` precisa estar na raiz do repositório para o botão "Baixar CV" funcionar.
 
 ---
 
@@ -78,12 +84,18 @@ Aguarde 1–2 minutos e acesse [rafafelbrown.github.io](https://rafafelbrown.git
 
 ## 📄 Seções do Portfólio
 
-- **Hero** — Apresentação, status de disponibilidade e typewriter
+- **Hero** — Apresentação, status de disponibilidade, typewriter e botão de download do CV
 - **Sobre Mim** — Trajetória, estatísticas e visão de carreira
 - **Skills** — Stack completa: linguagens, análise, visualização, ML, banco de dados, cloud e ferramentas
 - **Projetos** — Cards com descrição, tecnologias e links para o GitHub
 - **Formação** — Timeline acadêmica e grade de certificações
 - **Contato** — LinkedIn, GitHub, e-mail e WhatsApp
+
+---
+
+## 🌐 Internacionalização (em planejamento)
+
+Suporte a múltiplos idiomas planejado para uma versão futura: **Português 🇧🇷 · English 🇺🇸 · Español 🇪🇸**
 
 ---
 

@@ -65,7 +65,7 @@ Sempre que concluir um curso de peso (Alura, ENAP, Coursera, etc.):
     ```html
     <!-- ✏️ EDITAR CERTIFICAÇÕES: Adicione no topo -->
     <div class="cert-card">
-      <span class="cert-icon">🤖</span> <!-- Escolha um emoji apropriado -->
+      <span class="cert-icon">🤖</span>
       <div class="cert-info">
         <div class="cert-title">[Nome do Novo Curso]</div>
         <div class="cert-org">[Plataforma] · [mês/ano] ⭐ Mais recente</div>
@@ -79,22 +79,53 @@ Sempre que concluir um curso de peso (Alura, ENAP, Coursera, etc.):
 *   Vá até a seção de Projetos (linha ~240).
 *   Duplique um dos blocos `<div class="project-card">` e edite o título, descrição, tags de tecnologia e o link do botão para direcionar para o novo repositório.
 *   Altere a classe do status de acordo com o estado do projeto:
-    *   `status-done` para Concluído (Fundo Verde/Ciano)
-    *   `status-wip` para Em Desenvolvimento (Fundo Amarelo)
-    *   `status-academic` para Acadêmico (Fundo Roxo)
+    *   `status-done` para Concluído (verde)
+    *   `status-wip` para Em Desenvolvimento (amarelo)
+    *   `status-academic` para Acadêmico (roxo)
+
+---
+
+### 5. Atualizou o Currículo (CV) 📄
+O botão "Baixar CV" no Hero aponta para o arquivo `cv-rafael-brown.pdf` na raiz do repositório.
+
+*   Para atualizar o CV, basta **substituir o arquivo** `cv-rafael-brown.pdf` por uma versão nova com o **mesmo nome**.
+*   Não mude o nome do arquivo — assim o botão continua funcionando sem nenhuma alteração no HTML.
+
+```bash
+# Após substituir o arquivo:
+git add cv-rafael-brown.pdf
+git commit -m "docs: atualiza curriculo"
+git push origin main
+```
+
+---
+
+### 6. Preview rico no LinkedIn (og:image) 🖼️
+O portfólio já está configurado com Open Graph completo (`og:title`, `og:description`, `og:image`, `og:url`). Quando alguém compartilhar o link **https://rafafelbrown.github.io** no LinkedIn ou WhatsApp, o preview vai aparecer com sua foto automaticamente.
+
+*   Se trocar a foto de perfil, mantenha o nome `foto.jpg` — o meta tag já aponta para ela.
+*   Se quiser usar uma imagem diferente para o preview, edite a linha no `index.html`:
+    ```html
+    <meta property="og:image" content="https://rafafelbrown.github.io/foto.jpg" />
+    ```
+
+---
+
+### 7. Internacionalização (EN 🇺🇸 / ES 🇪🇸) — Em Planejamento 🌐
+Suporte a inglês e espanhol está planejado para uma versão futura. Quando for implementado, este guia será atualizado com as instruções de como traduzir e manter as versões.
 
 ---
 
 ## 🚀 Como Enviar as Alterações para o GitHub Pages
 
-Após salvar as modificações no seu editor de código (como o VS Code), abra o terminal na pasta `P:\portfolio` e execute os seguintes comandos para atualizar o seu site online em menos de 1 minuto:
+Após salvar as modificações no seu editor de código (como o VS Code), abra o terminal na pasta do projeto e execute:
 
 ```bash
 # 1. Adicione todas as alterações ao Git
 git add .
 
 # 2. Faça o commit descrevendo o que você mudou
-git commit -m "feat: atualiza status de estagio e novo certificado"
+git commit -m "feat: descrição da mudança"
 
 # 3. Envie para o GitHub
 git push origin main
