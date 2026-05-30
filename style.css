@@ -82,6 +82,8 @@ nav {
 }
 .nav-links a:hover { color: var(--text); }
 .nav-links a:hover::after { width: 100%; }
+.nav-links a.active { color: var(--cyan); }
+.nav-links a.active::after { width: 100%; }
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; }
 .nav-toggle span { width: 24px; height: 2px; background: var(--text); border-radius: 2px; transition: var(--transition); }
 
@@ -126,7 +128,7 @@ section { position: relative; z-index: 1; }
   font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 900; line-height: 1.1;
   margin-bottom: 1rem;
 }
-.typewriter-wrap { height: 2rem; margin-bottom: 1.5rem; }
+.typewriter-wrap { min-height: 2rem; margin-bottom: 1.5rem; }
 #typewriter {
   font-size: 1.2rem; font-weight: 600; color: var(--cyan);
   border-right: 2px solid var(--cyan); padding-right: 4px;
