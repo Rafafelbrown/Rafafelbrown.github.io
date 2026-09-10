@@ -1,5 +1,5 @@
 /* ===== RESET & BASE ===== */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@300;400;500;600;700;800;900&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -347,4 +347,123 @@ footer .footer-grad { background: linear-gradient(90deg, var(--cyan), var(--viol
   .hero-name { font-size: 2.2rem; }
   .projects-grid { grid-template-columns: 1fr; }
   .contact-cards { grid-template-columns: 1fr 1fr; }
+}
+
+/* ===== IDENTIDADE OUVIDORIA ===== */
+:root {
+  --bg: #f4f1ea;
+  --bg2: #ebe8df;
+  --bg3: #faf9f5;
+  --cyan: #137546;
+  --violet: #133221;
+  --mid: #a3c832;
+  --text: #133221;
+  --muted: #52665d;
+  --card: #ffffff;
+  --border: #d7e2d2;
+  --glow-cyan: rgba(19, 117, 70, 0.12);
+  --glow-violet: rgba(163, 200, 50, 0.16);
+  --radius: 8px;
+}
+
+body {
+  font-family: 'REM', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.orbs { display: none; }
+nav {
+  padding: 1rem max(1rem, calc((100% - 1100px) / 2));
+  background: rgba(247, 249, 244, 0.94);
+  border-bottom-color: var(--border);
+  backdrop-filter: blur(12px);
+}
+.nav-logo {
+  color: var(--violet);
+  background: none;
+  -webkit-text-fill-color: initial;
+}
+.nav-links a { color: var(--muted); }
+.nav-links a::after { background: var(--mid); }
+.nav-links a:hover, .nav-links a.active { color: var(--cyan); }
+.language-switcher { display: flex; gap: 0.25rem; margin-left: auto; margin-right: 1rem; }
+.language-btn {
+  border: 1px solid var(--border); background: transparent; color: var(--muted);
+  padding: 0.3rem 0.45rem; border-radius: 3px; cursor: pointer; font: inherit;
+  font-size: 0.7rem; font-weight: 800; letter-spacing: 0.04em;
+}
+.language-btn:hover, .language-btn.active { background: var(--cyan); border-color: var(--cyan); color: #fff; }
+
+.section-tag {
+  color: var(--cyan);
+  background: rgba(163, 200, 50, 0.14);
+  border-color: rgba(163, 200, 50, 0.45);
+  border-radius: 3px;
+}
+.gradient-text {
+  color: var(--cyan);
+  background: none;
+  -webkit-text-fill-color: initial;
+}
+#hero { padding-top: 7rem; }
+.hero-badge {
+  background: var(--bg3);
+  border-color: var(--border);
+  border-radius: 4px;
+  color: var(--muted);
+}
+.hero-badge span { background: var(--mid); }
+.hero-name { letter-spacing: -0.02em; }
+#typewriter { color: var(--cyan); border-right-color: var(--mid); }
+.hero-desc { color: var(--muted); }
+.btn-primary {
+  background: var(--cyan);
+  border-radius: 4px;
+  box-shadow: none;
+}
+.btn-primary:hover { background: var(--violet); box-shadow: 0 8px 20px rgba(19, 50, 33, 0.16); }
+.btn-outline { border-color: var(--cyan); border-radius: 4px; color: var(--cyan); }
+.btn-outline:hover { background: var(--cyan); color: #fff; border-color: var(--cyan); }
+.hero-photo-ring {
+  background: var(--mid);
+  box-shadow: 0 12px 30px rgba(19, 50, 33, 0.14);
+  animation: none;
+}
+.hero-photo-ring img { background: var(--bg2); }
+
+#about, #projects, #contact { background: var(--bg); }
+#skills, #education { background: var(--bg2); }
+.stat-card, .about-vision, .skill-category, .project-card, .cert-card, .contact-card {
+  background: var(--card);
+  border-color: var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 5px 18px rgba(19, 50, 33, 0.045);
+}
+.stat-card .num { color: var(--cyan); background: none; -webkit-text-fill-color: initial; }
+.about-vision h3, .skill-cat-title, .timeline-date { color: var(--cyan); }
+.skill-category:hover, .cert-card:hover { border-color: var(--mid); }
+.badge { border-radius: 3px; }
+.badge-cyan, .badge-violet, .badge-green, .badge-orange, .badge-pink, .badge-yellow {
+  color: var(--cyan);
+  background: rgba(19, 117, 70, 0.07);
+  border-color: rgba(19, 117, 70, 0.25);
+}
+.project-card::before { background: var(--mid); }
+.project-card:hover { transform: translateY(-3px); border-color: var(--mid); box-shadow: 0 12px 28px rgba(19, 50, 33, 0.1); }
+.project-status, .project-tag { border-radius: 3px; }
+.status-done, .status-wip, .status-academic { background: rgba(163, 200, 50, 0.13); color: var(--cyan); border-color: rgba(163, 200, 50, 0.5); }
+.project-tag { background: rgba(19, 117, 70, 0.07); color: var(--cyan); border-color: rgba(19, 117, 70, 0.2); }
+.project-link { color: var(--cyan); }
+.timeline::before { background: var(--mid); }
+.timeline-item::before { background: var(--cyan); box-shadow: 0 0 0 4px rgba(163, 200, 50, 0.22); }
+.contact-card:hover { border-color: var(--mid); box-shadow: 0 10px 24px rgba(19, 50, 33, 0.1); }
+footer { border-top-color: var(--border); }
+footer .footer-grad { color: var(--cyan); background: none; -webkit-text-fill-color: initial; }
+#back-to-top { background: var(--cyan); border-radius: 4px; box-shadow: 0 8px 20px rgba(19, 50, 33, 0.18); }
+#back-to-top:hover { box-shadow: 0 10px 24px rgba(19, 50, 33, 0.25); }
+
+@media (max-width: 640px) {
+  .nav-links { background: rgba(247, 249, 244, 0.98); }
+  .language-switcher { margin-left: auto; margin-right: 0.75rem; }
 }
