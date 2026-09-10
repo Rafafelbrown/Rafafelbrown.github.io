@@ -3,6 +3,7 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* Paleta original, mantida como referencia.
 :root {
   --bg: #0a0a0f;
   --bg2: #0f0f1a;
@@ -21,6 +22,7 @@
   --transition-ease: 0.3s ease;
   --transition-ease-in: 0.3s ease-in;
 }
+*/
 
 html { scroll-behavior: smooth; }
 
