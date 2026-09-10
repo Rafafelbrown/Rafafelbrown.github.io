@@ -1,0 +1,46 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Variaveis de ambiente
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Node.js e ferramentas de build
+node_modules/
+dist/
+build/
+.cache/
+
+# Arquivos temporarios e logs
+*.tmp
+*.temp
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# pdf menos o do cv
+*.pdf
+!cv-rafael-brown.pdf
+
+# Arquivos de configuração do sistema
+*.swp
+
+# Arquivos de backup
+*.bak

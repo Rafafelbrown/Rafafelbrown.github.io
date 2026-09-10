@@ -15,16 +15,9 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=REM:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-<!-- ORBS ANIMADOS -->
-<div class="orbs" aria-hidden="true">
-  <div class="orb orb1"></div>
-  <div class="orb orb2"></div>
-  <div class="orb orb3"></div>
-</div>
 
 <!-- NAVBAR -->
 <nav id="navbar">
@@ -36,6 +29,11 @@
     <li><a href="#education">Formação</a></li>
     <li><a href="#contact">Contato</a></li>
   </ul>
+  <div class="language-switcher" aria-label="Idioma da página">
+    <button type="button" class="language-btn active" data-language="pt-BR" aria-label="Português">PT</button>
+    <button type="button" class="language-btn" data-language="en" aria-label="English">EN</button>
+    <button type="button" class="language-btn" data-language="es" aria-label="Español">ES</button>
+  </div>
   <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
     <span></span><span></span><span></span>
   </button>
@@ -57,8 +55,8 @@
       </div>
       <!-- ✏️ EDITAR: Frase principal de apresentação -->
       <p class="hero-desc">
-        Transformo dados em decisões. Estudante de Ciência de Dados no UniCEUB, construindo
-        uma carreira sólida na interseção entre análise, machine learning e engenharia de dados.
+        Estagiário na Câmara dos Deputados e estudante de Ciência de Dados e Machine Learning
+        no CEUB, aplicando Python, SQL, Power BI e análise de dados em projetos acadêmicos e profissionais.
       </p>
       <div class="hero-btns">
         <a href="#projects" class="btn-primary">Ver meus projetos ↓</a>
@@ -93,11 +91,11 @@
           com conclusão prevista para <strong>2026</strong>.
         </p>
     
-        <!-- ✏️ EDITAR: Parágrafo 2 — objetivo atual. Quando estiver estagiando, mude para: "Atualmente estagiário na [Empresa] como Analista de Dados..." -->
+        <!-- ✏️ EDITAR: Parágrafo 2 — experiência atual -->
         <p>
-          Atualmente <strong>Estagiário na Câmara dos Deputados</strong>. 
-          Daqui a 3–5 anos, me vejo liderando projetos de IA
-          em organizações data-driven — ou empreendendo com tecnologia baseada em dados.
+          Atualmente sou <strong>Estagiário na Câmara dos Deputados</strong>, onde amplio minha experiência
+          profissional e conheço os processos, sistemas e soluções corporativas do Poder Legislativo.
+          Meu objetivo é evoluir em análise e engenharia de dados, contribuindo com soluções baseadas em evidências.
         </p>
         <!-- ✏️ EDITAR: Parágrafo 3 — suas conquistas técnicas. Atualize quando tiver novos projetos ou métricas -->
         <p>
@@ -121,7 +119,7 @@
         <div class="about-stats">
           <div class="stat-card">
             <!-- ✏️ Atualize ao completar novos cursos -->
-            <div class="num">11+</div>
+            <div class="num">18+</div>
             <div class="label">Cursos certificados</div>
           </div>
           <div class="stat-card">
@@ -160,7 +158,7 @@
         <div class="vision-item">
           <div class="icon">🤝</div>
           <!-- ✏️ Atualize seu nível de inglês conforme evoluir -->
-          <p><strong>Idiomas:</strong> Inglês avançado em constante desenvolvimento — lendo artigos técnicos e consumindo conteúdo internacional diariamente.</p>
+          <p><strong>Idiomas:</strong> Inglês intermediário em desenvolvimento, com contato frequente com documentação e conteúdo técnico.</p>
         </div>
       </div>
     </div>
@@ -263,8 +261,8 @@
 <section id="projects">
   <div class="container">
     <div class="section-header fade-in">
-      <div class="section-tag">O que estou construindo</div>
-      <h2 class="section-title">Projetos & <span class="gradient-text">Trabalhos</span></h2>
+      <div class="section-tag" id="projects-label">O que estou construindo</div>
+      <h2 class="section-title" id="projects-title">Projetos & <span class="gradient-text">Trabalhos</span></h2>
     </div>
     <div class="projects-grid">
 
@@ -447,9 +445,19 @@
              Quando se formar, mude a data de "2022 – 2026 (em curso)" para "2022 – 2026" e remova "(em curso)" -->
         <div class="timeline fade-in">
           <div class="timeline-item">
+            <div class="timeline-date">Jul/2026</div>
+            <div class="timeline-title">Certificação intermediária em Data Science Analysis</div>
+            <div class="timeline-sub">CEUB · 900 horas</div>
+          </div>
+          <div class="timeline-item">
             <div class="timeline-date">Jun/2026 – atual</div>
             <div class="timeline-title">Estagiário</div>
             <div class="timeline-sub">Câmara dos Deputados · Brasília, DF</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">Dez/2025</div>
+            <div class="timeline-title">Certificação intermediária em Data Science Development</div>
+            <div class="timeline-sub">CEUB · 300 horas</div>
           </div>
           <div class="timeline-item">
             <!-- ✏️ Ao se formar: mude para "2022 – 2026" -->
@@ -458,9 +466,9 @@
             <div class="timeline-sub">Centro Universitário de Brasília — UniCEUB · Brasília, DF</div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-date">2019 – 2022</div>
-            <div class="timeline-title">Bacharelado em Direito (Incompleto)</div>
-            <div class="timeline-sub">Centro Universitário de Brasília — UniCEUB · Brasília, DF</div>
+            <div class="timeline-date">2024</div>
+            <div class="timeline-title">Data Science Basics</div>
+            <div class="timeline-sub">CEUB · Certificação intermediária de 750 horas</div>
           </div>
           <div class="timeline-item">
             <div class="timeline-date">2024</div>
@@ -469,13 +477,13 @@
           </div>
           <div class="timeline-item">
             <div class="timeline-date">2024</div>
-            <div class="timeline-title">Data Science Basics</div>
-            <div class="timeline-sub">UniCEUB — Fundamentos de KDD e Visualização de Dados</div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-date">2024</div>
             <div class="timeline-title">Introdução ao Excel</div>
             <div class="timeline-sub">ENAP — Escola Nacional de Administração Pública</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2019 – 2022</div>
+            <div class="timeline-title">Bacharelado em Direito (incompleto)</div>
+            <div class="timeline-sub">CEUB · Brasília, DF</div>
           </div>
           <div class="timeline-item">
             <div class="timeline-date">2018</div>
@@ -499,10 +507,31 @@
           </div>
           -->
           <div class="cert-card">
+            <span class="cert-icon">🎓</span>
+            <div class="cert-info">
+              <div class="cert-title">Data Science Analysis — 900h</div>
+              <div class="cert-org">CEUB · jul/2026 ⭐ Mais recente</div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="cert-icon">🏛️</span>
+            <div class="cert-info">
+              <div class="cert-title">Estágio Universitário — Ambientação</div>
+              <div class="cert-org">Câmara dos Deputados · jul/2026 · 11h</div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="cert-icon">🎓</span>
+            <div class="cert-info">
+              <div class="cert-title">Data Science Development — 300h</div>
+              <div class="cert-org">CEUB · dez/2025</div>
+            </div>
+          </div>
+          <div class="cert-card">
             <span class="cert-icon">🤖</span>
             <div class="cert-info">
               <div class="cert-title">Classificação com Machine Learning</div>
-              <div class="cert-org">Alura · jul/2025 ⭐ Mais recente</div>
+              <div class="cert-org">Alura · out/2025</div>
             </div>
           </div>
           <div class="cert-card">

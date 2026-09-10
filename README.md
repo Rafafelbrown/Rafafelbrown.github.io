@@ -21,7 +21,7 @@ Site portfólio desenvolvido do zero com HTML, CSS e JavaScript puros — sem fr
 - **Botão "Voltar ao topo"** — aparece após 400px de scroll
 - **Botão "Baixar CV"** — download direto do currículo em PDF a partir do Hero
 - **Design totalmente responsivo** — adaptado para mobile, tablet e desktop
-- **Orbs animados** — fundo com gradientes em movimento (CSS puro)
+- **Identidade institucional** — paleta inspirada na marca Ouvidoria da Câmara dos Deputados
 - **Open Graph completo** — preview rico ao compartilhar no LinkedIn e outras redes (título, descrição e imagem)
 
 ---
@@ -51,7 +51,7 @@ portfolio/
 | Estrutura | HTML5 semântico |
 | Estilo | CSS3 (variáveis, Grid, Flexbox, animações) |
 | Interações | JavaScript ES6+ (vanilla) |
-| Fonte | Inter — Google Fonts |
+| Fonte | REM — Google Fonts |
 | Deploy | GitHub Pages |
 
 ---
@@ -93,9 +93,9 @@ Aguarde 1–2 minutos e acesse [rafafelbrown.github.io](https://rafafelbrown.git
 
 ---
 
-## 🌐 Internacionalização (em planejamento)
+## 🌐 Internacionalização
 
-Suporte a múltiplos idiomas planejado para uma versão futura: **Português 🇧🇷 · English 🇺🇸 · Español 🇪🇸**
+A página oferece suporte a **Português · English · Español** pelo seletor de idioma na navegação. A preferência fica salva no navegador e o atributo `lang` do documento é atualizado para acessibilidade.
 
 ---
 
