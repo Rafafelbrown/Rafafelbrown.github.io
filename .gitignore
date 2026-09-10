@@ -37,7 +37,7 @@ yarn-error.log*
 
 # pdf menos o do cv
 *.pdf
-!cv-rafael-brown.pdf
+
 
 # Arquivos de configuração do sistema
 *.swp
